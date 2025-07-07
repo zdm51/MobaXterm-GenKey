@@ -2,57 +2,101 @@
 <html>
   <head>
     <title>MobaXterm Keygen</title>
-    <link href="https://fonts.googleapis.cnpmjs.org/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <style>
       html, body {
-      display: flex;
-      justify-content: center;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'Roboto', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
       }
       form {
-      border: 5px solid #f1f1f1;
+        border: 5px solid #f1f1f1;
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        background-color: white;
       }
-      input[type=text], input[type=text] {
-      width: 100%;
-      padding: 16px 8px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
+      input[type=text] {
+        width: calc(100% - 16px);
+        padding: 12px 8px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
+      }
+      input[type=text]:focus {
+        border-color: #8ebf42;
+        outline: none;
+        box-shadow: 0 0 5px rgba(138, 191, 66, 0.5);
       }
       button {
-      background-color: #8ebf42;
-      color: white;
-      padding: 14px 0;
-      margin: 10px 0;
-      border: none;
-      cursor: grabbing;
-      width: 100%;
-      }
-      h1 {
-      text-align:center;
-      font-size:18;
+        background-color: #8ebf42;
+        color: white;
+        padding: 14px;
+        margin: 10px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
       }
       button:hover {
-      opacity: 0.8;
+        background-color: #7aae38;
+        transform: translateY(-2px);
+      }
+      h1 {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
       }
       .formcontainer {
-      text-align: left;
-      margin: 24px 50px 12px;
+        text-align: left;
+        margin: 24px 0 12px;
       }
       .container {
-      padding: 16px 0;
-      text-align: left;
+        padding: 16px 0;
+        text-align: left;
       }
       .github {
-      padding: 16px 0;
-      text-align: center;
+        padding: 16px 0;
+        text-align: center;
+      }
+
+      /* Media Queries for responsiveness */
+      @media screen and (max-width: 600px) {
+        form {
+          padding: 10px;
+        }
+        input[type=text] {
+          padding: 8px;
+          margin: 6px 0;
+        }
+        button {
+          padding: 12px;
+          margin: 8px 0;
+        }
+        h1 {
+          font-size: 18px;
+        }
+      }
+
+      /* Add some icons */
+      .github img {
+        margin-left: 5px;
       }
     </style>
   </head>
   <body>
-    <form action="./gen" mothod="get">
+    <form action="/gen" method="get">
       <h1>MobaXterm Keygen</h1>
       <div class="formcontainer"></div>
       <hr/>
